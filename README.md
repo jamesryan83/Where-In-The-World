@@ -5,4 +5,6 @@ This is a full game with multiple activities, an sqlite database, token based pa
 
 It was developed in Eclipse.  It uses [Glide](https://github.com/bumptech/glide), [Gson](https://github.com/google/gson), [Guava](https://github.com/google/guava) and [sqlite-asset-helper](https://github.com/jgilfelt/android-sqlite-asset-helper)
 
+The code probably won't run without providing your own api keys.  The api keys have been replaced by 'NOT TELLING' in the code.  The actual game code is in src/com/dreamfire/whereintheworld
+
 [Google Play link](https://play.google.com/store/apps/details?id=com.dreamfire.whereintheworld)
