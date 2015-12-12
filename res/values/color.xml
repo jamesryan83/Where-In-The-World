@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_yellow">#FFCF40</color>
+    <color name="color_yellow_select">#E8B009</color>
+    <color name="color_red">#FF6B68</color>
+    <color name="color_red_select">#FF3C38</color>    
+    <color name="color_blue">#00B1DE</color>    
+    <color name="color_blue_select">#0094BA</color>
+    <color name="color_blue_light">#994EC3C7</color> <!-- was 50 alpha -->
+    <color name="color_blue_light_2">#D3EDF4</color>
+    <color name="color_blue_light_select">#40A0A3</color>
+    <color name="color_green">#2ECC71</color>
+    <color name="color_green_select">#27AE60</color>
+    <color name="color_purple">#A26CCC</color>
+    <color name="color_purple_select">#8C4DBD</color>
+    <color name="color_transparent_select">#80424242</color>   
+    
+    <color name="color_orange">#E67E22</color> <!-- Used for distance textView -->
+    
+    <color name="color_off_white">#F5F5F5</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_black">#000000</color>
+    
+    
+    <color name="color_gray">#BBBBBB</color>	<!-- Used on some textViews -->
+    <color name="color_gray_2">#999999</color>    <!-- Disabled button colour -->
+    <color name="color_gray_dark">#454646</color> <!-- Nav drawer background -->
+    <color name="color_gray_transparent_light">#507C7C7C</color>
+    <color name="color_gray_transparent">#80999999</color> <!-- Only used on blank button when it's pushed -->
+    <color name="color_gray_transparent_dark">#BB7C7C7C</color>
+    
+     
+    <color name="color_layout_blue_light">#D3EDF4</color>
+    <color name="color_layout_blue_light_2">#61CBE6</color>
+    <color name="color_layout_blue">#A5DDEB</color>
+    <color name="color_layout_blue_dark">#2A6675</color>     
+     
+</resources>

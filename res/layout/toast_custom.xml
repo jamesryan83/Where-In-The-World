@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toast_custom_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_borderblack"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/string_toastcustom_contentdes"
+        android:padding="6dp"
+        android:src="@drawable/image_common_info" />
+
+    <com.dreamfire.whereintheworld.customviews.MyTextView
+        android:id="@+id/toast_custom_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingRight="10dp"
+        android:paddingTop="8dp"
+        android:textSize="@dimen/dimen_textsize_18" />
+
+</LinearLayout>

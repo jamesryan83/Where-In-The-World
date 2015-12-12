@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:id="@+id/tokens_activity_layout_top"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_common_layout_top_bottom"
+        android:background="@android:color/transparent" >
+
+        <com.dreamfire.whereintheworld.customviews.MyTextView
+            android:id="@+id/tokens_activity_textview_ads_message"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="55dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_gray"
+            android:textSize="@dimen/dimen_textsize_15" />
+    </RelativeLayout>
+
+    <com.dreamfire.whereintheworld.customviews.MyTextView
+        android:id="@+id/tokens_activity_textview_tokens"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:gravity="center|center_vertical"
+        android:textColor="@color/color_gray"
+        android:textSize="@dimen/dimen_textsize_25" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tokens_activity_textview_tokens"
+        android:layout_below="@id/tokens_activity_layout_top"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/tokens_activity_layout_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1" >
+
+                <include
+                    android:id="@+id/tokens_activity_hint_1"
+                    layout="@layout/fragment_tokens_button" />
+
+                <com.dreamfire.whereintheworld.customviews.MyButton
+                    android:id="@+id/tokens_activity_button_1"
+                    style="@style/style_common_button_invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tokens_activity_layout_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1" >
+
+                <include
+                    android:id="@+id/tokens_activity_hint_2"
+                    layout="@layout/fragment_tokens_button" />
+
+                <com.dreamfire.whereintheworld.customviews.MyButton
+                    android:id="@+id/tokens_activity_button_2"
+                    style="@style/style_common_button_invisible" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/tokens_activity_layout_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1" >
+
+                <include
+                    android:id="@+id/tokens_activity_hint_3"
+                    layout="@layout/fragment_tokens_button" />
+
+                <com.dreamfire.whereintheworld.customviews.MyButton
+                    android:id="@+id/tokens_activity_button_3"
+                    style="@style/style_common_button_invisible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tokens_activity_layout_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1" >
+
+                <include
+                    android:id="@+id/tokens_activity_hint_4"
+                    layout="@layout/fragment_tokens_button" />
+
+                <com.dreamfire.whereintheworld.customviews.MyButton
+                    android:id="@+id/tokens_activity_button_4"
+                    style="@style/style_common_button_invisible" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

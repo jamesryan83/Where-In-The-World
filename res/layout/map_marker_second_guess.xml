@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/map_marker_layout_second_guess"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/image_map_marker_orange_patch"
+    android:orientation="vertical" >
+
+    <com.dreamfire.whereintheworld.customviews.MyTextView
+        android:id="@+id/map_marker_textview_second_guess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="2dp"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/dimen_textsize_20" />
+
+</LinearLayout>

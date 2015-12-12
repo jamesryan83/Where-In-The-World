@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <!-- Some strings have " quotes to keep padding spaces on start/end -->
+    
+    
+    <string name="string_app_name">WITW</string>
+        
+    <!-- FragmentCategories -->        
+    <string name="string_categories_purchase_category_title">Purchase Category</string>
+    <string name="string_categories_purchase_category1">"Do you want to spend "</string> <!-- Do you want to spend 123 Tokens to Unlock this Category ?-->
+    <string name="string_categories_purchase_category2">" Tokens to Unlock this Category ?"</string>
+    <string name="string_categories_contentdes_category_image">Image for a single category</string>
+    
+    <!-- FragmentDifficulty -->
+    <string name="string_difficulty_easy">Easy</string>
+    <string name="string_difficulty_normal">Normal</string>
+    <string name="string_difficulty_hard">Hard</string>
+    <string name="string_difficulty_expert">Expert</string>
+    <string name="string_difficulty_title">Difficulty</string>
+    <string name="string_difficulty_completed">"Completed "</string>  <!-- Completed 25% -->
+    <string name="string_difficulty_lock">Finish Hard to Unlock</string>
+    <string name="string_difficulty_lock_title">Difficulty Locked</string>
+    <string name="string_difficulty_lock_message">You need to PASS all Levels on Hard to Unlock Expert Mode</string>
+    
+    <!-- FragmentHintData - see strings_hints.xml for all hint text -->
+    <string name="string_hintdata_contentdes">An image that helps describe the hint</string>
+    
+    <!-- FragmentHints -->
+    <string name="string_hints_title">Hints</string>
+    <string name="string_hints_used_only_once">" can only be used once"</string>	<!-- Hint_Name can only be used once -->
+    
+    <!-- FragmentLevels -->
+    <string name="string_levels_title">Level</string>
+    <string name="string_levels_locked">This Level is currently Locked</string>
+    <string name="string_levels_complete_previous">You need to PASS the previous Level to Unlock</string>
+    
+    <!-- FragmentLocations -->
+    <string name="string_locations_score">Score</string>
+    <string name="string_locations_score_colon">"Score : "</string>    
+    <string name="string_locations_current_points">Current Points</string>
+    <string name="string_locations_required_points">Required Points</string>
+    <string name="string_locations_reset">Locations have been Reset</string>    
+    <string name="string_locations_already_completed">You have already finished this location</string>
+    <string name="string_locations_contentdes_reset">Picture of a circle with an arrow on it</string>
+    <string name="string_locations_contentdes_location">Picture of cartoon mountain that shows if locations has been played or not</string>
+    
+    <!-- FragmentMainGame -->
+    <string name="string_maingame_button_score">Score</string>
+    <string name="string_maingame_button_accept">Accept</string>
+    <string name="string_maingame_not_connected_to_internet">Not connected to internet.  Please check your internet connection</string>
+    <string name="string_maingame_ready">Ready</string>
+    <string name="string_maingame_go">Go !</string>
+    <string name="string_maingame_calculating">Calculating</string>
+    <string name="string_maingame_confirm">Confirm</string>
+    <string name="string_maingame_lose_hints">You will lose any hints you</string>
+    <string name="string_maingame_lose_hints2">have purchased for this location</string>    
+    <string name="string_maingame_score">Score</string>    
+    <string name="string_maingame_longclick_mapstreet">Switch between Map and Street View</string>
+    <string name="string_maingame_longclick_hint">Purchase a Hint</string>
+    <string name="string_maingame_longclick_back">Go back to Locations screen</string>
+    <string name="string_maingame_longclick_navdrawer">Open Navigation Drawer</string>
+    <string name="string_maingame_longclick_zoomin">Zoom In</string>
+    <string name="string_maingame_longclick_zoomout">Zoom Out</string>
+    <string name="string_maingame_longclick_gotomarker">Move to your guess marker</string>
+    <string name="string_maingame_longclick_accept">Accept Guess</string>
+    <string name="string_maingame_longclick_cancelguess">Cancel Guess</string>
+    <string name="string_maingame_loading_streetview">Loading...</string>
+    <string name="string_maingame_longclick_score1">Return to regular map</string>
+    <string name="string_maingame_longclick_score2">Return to Score screen</string>    
+    <string name="string_maingame_longclick_hidehints">Hide Hints from Map</string>
+    <string name="string_maingame_contentdes_zoomin">Picture of magnifying glass with plus symbol</string>
+    <string name="string_maingame_contentdes_zoomout">Picture of magnifying glass with minus symbol</string>
+    <string name="string_maingame_contentdes_hints">Picture of magnifying glass for hints</string>
+    <string name="string_maingame_contentdes_mapstreet">Picture of map or traffic light to symbolize google map and street view</string>
+    <string name="string_maingame_contentdes_gotomarker">Picture of a marker</string>
+    <string name="string_maingame_contentdes_hidehints">Picture of a question mark that is crossed out</string>
+    
+    
+    
+    <!-- FragmentMainMenu -->
+    <string name="string_mainmenu_title">Where in the World</string>    
+    <string name="string_mainmenu_buton_maingame">Main Game</string>
+    <string name="string_mainmenu_buton_freeplay">Free Play</string>
+    <string name="string_mainmenu_buton_tutorial">Tutorial</string>    
+    <string name="string_mainmenu_contentdes_globe">Picture of the earth</string>
+    <string name="string_mainmenu_buton_first_run_message">This game requires a good Internet Connection, preferably a Wifi Connection.  
+        Please be aware that a poor Internet Connection will likely reduce the amount of Fun you have !</string>
+    <string name="string_mainmenu_buton_try_tutorial">It is recommended you do the Tutorial before playing the Main Game</string>
+    <string name="string_mainmenu_buton_try_tutorial2">It is recommended you do the Tutorial before playing Free Play</string>
+    <string name="string_mainmenu_lock_message">You need to PASS all Levels on Normal to Unlock Free Play Mode</string>
+    
+    
+    <!-- FragmentSettings -->
+    <string name="string_settings_reset_database">Reset Game Data</string>
+    <string name="string_settings_reset_database1">This will reset ALL the game data.</string>
+    <string name="string_settings_reset_database2">It will NOT reset any purchased Tokens.</string>
+    <string name="string_settings_reset_database3">This action cannot be undone.</string>
+    <string name="string_settings_reset_database4">The game will exit after this is completed.</string>
+    <string name="string_settings_reset_database5">Are you sure you want to continue ?</string>
+    <string name="string_settings_music">Music</string>
+    <string name="string_settings_notification_bar">Show Notification Bar</string>
+    <string name="string_settings_light_theme">Light Theme</string>
+    <string name="string_settings_dark_theme">Dark Theme</string>
+    <string name="string_settings_kilometres">Kilometres</string>
+    <string name="string_settings_miles">Miles</string>
+    <string name="string_settings_references">References</string>
+    <string name="string_settings_references_context">Data used in Where in the World comes from\nen.wikipedia.org\nwww.geonames.org\nwww.cia.gov\nwww.xe.com\n
+        www.free-country-flags.com</string>
+    <string name="string_settings_credits">Credits</string>
+    <string name="string_settings_legal">Legal Notices</string>
+    <string name="string_settings_credits_content">Art : Jason Christie\nProgramming : James Ryan\ndreamfireapps@gmail.com</string>
+    <string name="string_settings_credits_title">Dreamfire</string>   
+    
+    <string name="string_settings_contentdes_checkbox">Check box image.  Square with a tick inside it</string>
+    
+    <!-- ActivitySplash -->
+    <string name="string_splash_text">Where in the World</string>
+    <string name="string_splash_contentdes_globe">Stylized image of the earth</string>
+    <string name="string_splash_contentdes_logo">Dream fire logo.  Orange circle with a blue flame in the middle and the word dream fire written along the bottom</string>
+
+    <!-- FragmentTokens -->
+    <string name="string_tokens_current">"Current Tokens "</string>  <!-- Current Tokens 123 -->
+    <string name="string_tokens_buy">Buy</string>
+	<string name="string_tokens_tokens">" Tokens"</string> <!-- 123 Tokens -->
+	<string name="string_tokens_remove_ads1">"Purchasing any of the Token "</string>
+	<string name="string_tokens_remove_ads2">"Packs will remove Advertisements "</string>
+	<string name="string_tokens_infinite">Infinite</string>
+    
+	<!-- NavDrawerActivity -->
+	<string name="string_navdrawer_confirm">Confirm</string>
+	<string name="string_navdrawer_reset_locations">This will reset all 6 locations and scores</string>
+	<string name="string_navdrawer_game_data">Game Data</string>
+	<string name="string_navdrawer_difficulty_text">"Difficulty : "</string>
+	<string name="string_navdrawer_category_text">"Category : "</string>
+	<string name="string_navdrawer_level_text">"Level : "</string>
+	<string name="string_navdrawer_tokens_text">"Tokens : "</string>
+	<string name="string_navdrawer_locations_found">Locations Found</string>
+	<string name="string_navdrawer_title">Navigation</string>
+	<string name="string_navdrawer_buy_tokens">Buy Tokens</string>
+	<string name="string_navdrawer_settings">Settings</string>
+	<string name="string_navdrawer_main_menu">Main Menu</string>
+	<string name="string_navdrawer_difficulty">Difficulty</string>
+	<string name="string_navdrawer_category">Category</string>
+	<string name="string_navdrawer_level">Level</string>
+	<string name="string_navdrawer_location">Location</string>
+	<string name="string_navdrawer_exit">Exit</string>
+	<string name="string_navdrawer_music">Music</string>
+	<string name="string_navdrawer_music_next">Next</string>
+	<string name="string_navdrawer_music_previous">Previous</string>
+	<string name="string_navdrawer_music_next_contentdes">Picture of arrow to depict next music track</string>
+	<string name="string_navdrawer_music_previous_contentdes">Picture of arrow to depict previous music track</string>
+	<string name="string_navdrawer_exit_title">Exit Game</string>
+	<string name="string_navdrawer_exit_message">Are you sure you want to Exit ?</string>
+	
+	
+	
+	<!-- DialogMsgBoxGeneral -->
+     <string name="string_dialogmsgboxgeneral_tokens">Buy Tokens</string>
+    
+    <!-- DialogPostGame -->
+    <string name="string_dialogpostgame_title">Score</string>
+    <string name="string_dialogpostgame_view_map">View Map</string>
+    <string name="string_dialogpostgame_next">Next</string>
+    <string name="string_dialogpostgame_wiki">Wiki</string>
+	<string name="string_dialogpostgame_distance">Distance</string>
+	<string name="string_dialogpostgame_timetaken">Time Taken</string>
+	<string name="string_dialogpostgame_bonustokens">Bonus Tokens</string>
+	<string name="string_dialogpostgame_distancescore">Distance Score</string>
+	<string name="string_dialogpostgame_distancebonus">Distance Bonus</string>
+	<string name="string_dialogpostgame_timebonus">Time Bonus</string>
+	<string name="string_dialogpostgame_totalscore1">"Your Total Score is "</string>
+	<string name="string_dialogpostgame_totalscore2">" Points"</string>
+	
+	<!-- DialogProgress -->
+    <string name="string_dialogprogress_contentdes_loadingcircle">Spinning circle image that shows the screen is loading</string>
+    
+	<!-- DialogPostGameInfo -->
+	<string name="string_postgameinfo_title">Background</string>
+    
+    
+	<!-- FragmentMap -->
+    <string name="string_fragmentmap_longloadingtime">Map is taking a long time to load.  There may be a problem with your Internet Connection.</string>
+    <string name="string_fragmentmap_guessmarker">My Guess</string>
+    <string name="string_fragmentmap_arrowsremaining">"Arrows Remaining : "</string>
+    <string name="string_fragmentmap_guessesremaining">"Guesses Remaining : "</string>
+    <string name="string_fragmentmap_distance">Distance from Answer</string>
+    <string name="string_fragmentmap_timeleft">"Time Left : "</string>    
+    <string name="string_fragmentmap_selectmarker">Select one of the Green Markers on the map</string>
+    
+    <!-- FragmentPagerCategories -->
+    <string name="string_fragmentpagercategories_unlock1">Unlock this Category</string>    
+    <string name="string_fragmentpagercategories_unlock2">" Tokens"</string>
+    <string name="string_common_contentdes_tick">Tick image for when category is completed</string>
+    
+    <!-- FragmentPagerLevel -->
+    <string name="string_fragmentpagerlevel_bestscore">"Best Score - "</string>
+    
+    
+    
+    
+    <!-- CheckLevelCompleted -->
+    <string name="string_checklevelcompleted_new_bestscore">New High Score</string>
+    <string name="string_checklevelcompleted_beat_bestscore">You set a new High Score for this Level !</string>
+    <string name="string_checklevelcompleted_final_score">"Final Score : "</string>
+    <string name="string_checklevelcompleted_level_passed">Level Passed</string>
+    <string name="string_checklevelcompleted_level_complete">Level Complete</string>
+    <string name="string_checklevelcompleted_unlocked_next_level">You unlocked the next Level</string>
+    <string name="string_checklevelcompleted_finish_all_locations">Finish all Locations to COMPLETE the Level</string>
+    <string name="string_checklevelcompleted_tokens_plus">Tokens +</string>
+    <string name="string_checklevelcompleted_all_locations_finished">All locations finished !</string>
+    <string name="string_checklevelcompleted_all_levels_complete">All Levels Complete</string>
+    <string name="string_checklevelcompleted_finished_all_levels">You finished all the Levels for this Category !</string>
+    <string name="string_checklevelcompleted_finished_all_levels2">COMPLETE all the Levels to get Bonus Tokens</string>
+    <string name="string_checklevelcompleted_all_categories_complete">All Categories Complete</string>
+    <string name="string_checklevelcompleted_finished_all_categories">You finished all the Categories for this Difficulty !</string>
+    <string name="string_checklevelcompleted_expert_unlocked">Expert Unlocked</string>
+    <string name="string_checklevelcompleted_unlocked_expert_mode">You unlocked Expert Mode !</string>
+    <string name="string_checklevelcompleted_free_play_unlocked">Free Play Unlocked</string>
+    <string name="string_checklevelcompleted_unlocked_free_play_mode">You unlocked Free Play Mode !</string>
+    <string name="string_checklevelcompleted_game_completed_title">Game Complete !</string>
+    <string name="string_checklevelcompleted_game_completed">WOW !  You Completed the WHOLE GAME !</string>
+    <string name="string_checklevelcompleted_game_completed2">You can now consider yourself an Expert in Geography !</string>
+    <string name="string_checklevelcompleted_level_failed">Level Failed</string>
+    <string name="string_checklevelcompleted_not_enough_points">You didn\'t get enough points.  Try again</string>
+    
+    
+    <!-- ActivityMain -->
+    <string name="string_activitymain_title_difficulty">Difficulty</string>
+    <string name="string_activitymain_title_levels">Level</string>
+    <string name="string_activitymain_title_hints">Hints</string>
+    <string name="string_activitymain_title_tokens">Tokens</string>
+    <string name="string_activitymain_title_settings">Settings</string>
+    <string name="string_activitymain_title_all_locations">All Locations</string>
+        
+    
+    <!-- FragmentHintsHintButton.xml -->
+    <string name="string_hintsitem_buy">Buy</string>
+
+    <!-- MapMarkerHintArrow -->
+    <string name="string_mapmarker_hintarrow_contentdes">Picture of an arrow</string>
+    
+    <!-- ToastCustom -->
+    <string name="string_toastcustom_contentdes">General information picture.  Its the letter i in a circle</string>
+
+    
+    
+    <!-- Arrays -->
+    <string-array name="string_array_common_difficulty_names">
+        <item>Easy</item>
+        <item>Normal</item>
+        <item>Hard</item>
+        <item>Expert</item>
+    </string-array>
+    
+    <string-array name="string_array_common_level_names">
+        <item>Level 1</item>
+        <item>Level 2</item>
+        <item>Level 3</item>
+        <item>Level 4</item>
+        <item>Level 5</item>
+    </string-array>
+    
+    
+    <!-- Tutorial --> 
+    <string name="string_tutorial_dialog_title">Tutorial</string>
+    <string name="string_tutorial_quit_title">Exit Tutorial</string>
+    <string name="string_tutorial_quit">Are you sure you want to exit the Tutorial ?</string>
+    <string name="string_tutorial_not_available">Not available during Tutorial</string>
+    <string name="string_tutorial_not_available_yet">Not available just yet...</string>
+    
+    
+            
+    <!-- Common -->    
+    <string name="string_common_cant_zoom_out">You can\'t zoom out any further</string>
+    <string name="string_common_token_text_default">0</string>
+    <string name="string_common_ok">OK</string>
+    <string name="string_common_cancel">Cancel</string>
+    <string name="string_common_not_enough_tokens">You don\'t have enough Tokens</string>
+    <string name="string_common_level_passed">Level Passed</string>
+    <string name="string_common_level_complete">Level Complete</string>
+    <string name="string_common_return">Return</string>
+    
+    
+	<string name="string_common_contentdes_settings">Settings Button Image</string>
+    <string name="string_common_contentdes_nav_drawer">Navigation Drawer Button Image</string>
+    <string name="string_common_contentdes_back">Back Button Image</string>
+    <string name="string_common_contentdes_swipe_left_arrow">Arrow showing that you can swipe left</string>
+    <string name="string_common_contentdes_swipe_right_arrow">Arrow showing that you can swipe right</string>
+    <string name="string_common_contentdes_token">Picture of a coin which represents a token</string>
+    <string name="string_common_contentdes_questionmark">Picture of a question mark</string>
+    <string name="string_common_contentdes_lock">Lock image for when something is locked</string>
+</resources>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- MapView and WebView -->
+
+    <ViewSwitcher
+        android:id="@+id/maingame_viewswitcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:id="@+id/maingame_framelayout_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </FrameLayout>
+
+        <WebView
+            android:id="@+id/maingame_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ViewSwitcher>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:longClickable="false"
+        android:visibility="visible" />
+
+    <!-- Left Side Buttons -->
+
+    <LinearLayout
+        android:id="@+id/maingame_linearlayout_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/maingame_button_nav_drawer"
+            style="@style/style_button_navdrawer"
+            android:contentDescription="@string/string_common_contentdes_nav_drawer" />
+
+        <ImageButton
+            android:id="@+id/maingame_button_zoom_in"
+            android:layout_width="@dimen/dimen_common_button_size_1"
+            android:layout_height="@dimen/dimen_common_button_size_1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_color_blue_light"
+            android:contentDescription="@string/string_maingame_contentdes_zoomin"
+            android:padding="5dp"
+            android:scaleType="centerInside" />
+
+        <ImageButton
+            android:id="@+id/maingame_button_zoom_out"
+            android:layout_width="@dimen/dimen_common_button_size_1"
+            android:layout_height="@dimen/dimen_common_button_size_1"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_color_blue_light"
+            android:contentDescription="@string/string_maingame_contentdes_zoomout"
+            android:padding="5dp"
+            android:scaleType="centerInside"/>
+
+        <ImageButton
+            android:id="@+id/maingame_button_back"
+            style="@style/style_button_back"
+            android:contentDescription="@string/string_common_contentdes_back" />
+    </LinearLayout>
+
+    <!-- Right Side Buttons -->
+
+    <LinearLayout
+        android:id="@+id/maingame_linearlayout_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/maingame_button_map_street"
+            android:layout_width="@dimen/dimen_common_button_size_2"
+            android:layout_height="@dimen/dimen_common_button_size_2"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_color_red"
+            android:contentDescription="@string/string_maingame_contentdes_mapstreet"
+            android:padding="7dp"
+            android:scaleType="centerInside" />
+
+        <ImageButton
+            android:id="@+id/maingame_button_hint"
+            android:layout_width="@dimen/dimen_common_button_size_2"
+            android:layout_height="@dimen/dimen_common_button_size_2"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_color_yellow"
+            android:contentDescription="@string/string_maingame_contentdes_hints"
+            android:padding="6dp"
+            android:scaleType="centerInside" />
+    </LinearLayout>
+
+    <!-- Accept and Cancel buttons -->
+
+    <RelativeLayout
+        android:id="@+id/maingame_relativelayout_accept_cancel"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp" >
+
+        <com.dreamfire.whereintheworld.customviews.MyButton
+            android:id="@+id/maingame_button_left"
+            style="@style/style_activitymaingame_button_accept_cancel_score"
+            android:layout_marginRight="10dp"
+            android:visibility="invisible" />
+
+        <com.dreamfire.whereintheworld.customviews.MyButton
+            android:id="@+id/maingame_button_middle"
+            style="@style/style_activitymaingame_button_accept_cancel_score"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible" />
+
+        <com.dreamfire.whereintheworld.customviews.MyButton
+            android:id="@+id/maingame_button_right"
+            style="@style/style_activitymaingame_button_accept_cancel_score"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <!-- Other buttons and textViews -->
+
+    <ImageButton
+        android:id="@+id/maingame_button_go_to_marker"
+        android:layout_width="@dimen/dimen_common_button_size_1"
+        android:layout_height="@dimen/dimen_common_button_size_1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/button_color_purple"
+        android:contentDescription="@string/string_maingame_contentdes_gotomarker"
+        android:padding="5dp"
+        android:scaleType="centerInside"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/maingame_button_hide_hints"
+        android:layout_width="@dimen/dimen_common_button_size_1"
+        android:layout_height="@dimen/dimen_common_button_size_1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="100dp"
+        android:background="@drawable/button_color_purple"
+        android:contentDescription="@string/string_maingame_contentdes_hidehints"
+        android:padding="5dp"
+        android:scaleType="centerInside"
+        android:visibility="invisible" />
+
+    <com.dreamfire.whereintheworld.customviews.MyTextView
+        android:id="@+id/maingame_textview_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:textColor="@color/color_purple"
+        android:textSize="@dimen/dimen_textsize_30" />
+
+    <com.dreamfire.whereintheworld.customviews.MyTextView
+        android:id="@+id/maingame_textview_hint_start"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="@color/color_purple"
+        android:textSize="@dimen/dimen_textsize_30"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <com.dreamfire.whereintheworld.customviews.MyTextView
+        android:id="@+id/maingame_textview_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/color_white"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:textColor="@color/color_purple"
+        android:textSize="@dimen/dimen_textsize_15"
+        android:visibility="invisible" />
+
+</RelativeLayout>

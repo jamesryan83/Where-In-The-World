@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Strings for Tutorial -->
+    <string name="string_tutorial_title">Tutorial</string>
+    
+    <string name="string_tutorial_mainmenu1">Welcome to Where in the World !</string>
+    <string name="string_tutorial_mainmenu2">This tutorial will guide you through each stage of the game.</string>
+    <string name="string_tutorial_mainmenu3">Click the OK Button to Start</string>
+    
+    <string name="string_tutorial_difficulty">This is the Difficulty screen.  Click on a Difficulty to select how challenging you would like the game to be.  
+        The number of Categories available to you depends on the Difficulty you choose.</string>
+    
+    <string name="string_tutorial_categories">This is the Categories screen.  Unlocking Categories requires Tokens *, which you will slowly 
+        gain as you play through the game, or you can purchase them.  Select a Category to continue.</string>
+        
+    <string name="string_tutorial_levels">This is the Levels screen.  Every Category has 5 levels and each Level is slightly harder than the last.  
+        Select a Level to continue.</string>
+    
+    <string name="string_tutorial_locations">This is the Locations screen.  Every Level has 6 randomly chosen Locations.  To PASS a Level, 
+        you must get the Required number of Points *, this will unlock the next Level. To COMPLETE a Level you must finish all the Locations, and for this you will get some 
+        Bonus Tokens *. Click on any one of the 6 Locations to start.</string>        
+    
+    <string name="string_tutorial_main_game1">Welcome to the main Game screen !  You start every Location looking at Google Street View, and your mission is to 
+        Guess where you think you are in the world.  Have a look around in Street View, then when you are ready 
+        Click the Switch to Map button *.</string>
+        
+    <string name="string_tutorial_main_game2">This is the Google Map screen. You can click 
+        on the Switch to Street View Button * to go back to the Street View screen if you would like to look around some more.  Tap anywhere on the Map to add a 
+        Guess Marker * and then Click on *</string>
+        
+    <string name="string_tutorial_main_game3">So you have made your Guess, but are you sure this is where the Answer is ?  Perhaps you need a Hint.  Clicking  * will take 
+        you to the Hints screen.  Let\'s go to the Hints screen now.</string>
+        
+    <string name="string_tutorial_hints">This is the Hints screen.  Hints cost Tokens *, and the higher the 
+        Token cost the better the Hint.  Continue by selecting a Hint.  You will be shown a description about the hint and then you will be returned to the Map.  
+        From there you can make another Guess.</string>
+        
+    <string name="string_tutorial_hints2">You have done well to come this far.  Have some free Tokens to get you started !</string>
+    
+    <string name="string_tutorial_post_game">This is the Post Game dialog.\n 
+        * returns to the Map\n 
+        * returns to the Locations\n  
+        * goes to the Wikipedia page\nTo return to the game from Wikipedia, just press back on your phone.</string>
+        
+    <string name="string_tutorial_last">So that\'s all there is to it !  Now you are back at the Locations screen, so choose another Location and continue your 
+        journey.  There\'s lots of weird and wonderful places to visit so start exploring !</string>
+    
+</resources>

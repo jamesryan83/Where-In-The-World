@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Strings for Hints -->
+    <string name="string_hint_anagram_title">Anagram</string>
+    <string name="string_hint_anagram">This Hint gives you the Name of the Location, but the letters of each word are scrambled</string>
+    
+    <string name="string_hint_area_title">Area</string>
+    <string name="string_hint_area">The land Area of this Country is</string>
+    
+    <string name="string_hint_arrows_title">Arrows</string>
+    <string name="string_hint_arrows1">"This Hint lets you place "</string>
+    <string name="string_hint_arrows2">" Arrows on the Map which point in the direction of the Answer"</string>
+    
+    <string name="string_hint_capital_city_title">Capital City</string>
+    <string name="string_hint_capital_city">The Capital City of this Country is</string>
+    
+    <string name="string_hint_country_title">Country</string>
+    <string name="string_hint_country">The Country is</string>
+    
+    <string name="string_hint_circle_around_earth_title">Circle Around the Earth</string>
+    <string name="string_hint_circle_around_earth">A Line is drawn all the way around the Earth.  The Answer lies somewhere on that Line</string>
+    
+    <string name="string_hint_circle_small_title">Small Circle</string>
+    <string name="string_hint_circle_medium_title">Medium Circle</string>
+    <string name="string_hint_circle_big_title">Big Circle</string>
+    <string name="string_hint_circle">The Answer is somewhere inside the Circle on the Map</string>
+    
+    <string name="string_hint_city_title">City</string>
+    <string name="string_hint_city">The Name of this City is</string>
+    
+    <string name="string_hint_camera_zoom_title">Close Up</string>
+    <string name="string_hint_camera_zoom1">"The Map will zoom to the location of the Answer, but you will not be able to move the screen at all.  Press the "</string>
+    <string name="string_hint_camera_zoom2">Return</string>
+    <string name="string_hint_camera_zoom3">" button to go back to the Map"</string>
+    
+    <string name="string_hint_continent_title">Continent</string>
+    <string name="string_hint_continent">The Continent is</string>
+    
+    <string name="string_hint_currency_title">Currency</string>
+    <string name="string_hint_currency">The Currency of this Country is</string>
+    
+    <string name="string_hint_flag_title">Country Flag</string>
+    <string name="string_hint_flag">The Flag above is the National Flag of the Country</string>
+    
+    <string name="string_hint_gdp_title">Gross Domestic Product</string>
+    <string name="string_hint_gdp">The Gross Domestic Product (GDP) of this Country in U.S Dollars (USD) is</string>
+    
+    <string name="string_hint_general_hint_title">General Hint</string>
+    
+    <string name="string_hint_hot_cold_title">Hot and Cold Markers</string>
+    <string name="string_hint_hot_cold1">"Click on the Map as many times as you can in "</string>
+    <string name="string_hint_hot_cold2">" seconds before the time runs out.  The Markers will change colour the closer you get to the Answer.  "</string>
+    <string name="string_hint_hot_cold3">Red</string>
+    <string name="string_hint_hot_cold4">" means you are close and "</string>
+    <string name="string_hint_hot_cold5">Blue</string>
+    <string name="string_hint_hot_cold6">" means you are far away"</string>
+    
+    <string name="string_hint_languages_title">Languages</string>
+    <string name="string_hint_languages">The Languages spoken in this Country are</string>
+    
+    <string name="string_hint_population_title">Population</string>
+    <string name="string_hint_population">The Population of this Country is</string>
+    
+    <string name="string_hint_random_markers_title">Random Markers</string>
+    <string name="string_hint_random_markers1">"A total of "</string>
+    <string name="string_hint_random_markers2">" Random Markers will be added to the Map.  Only "</string>
+    <string name="string_hint_random_markers3">One</string>
+    <string name="string_hint_random_markers4">" of them is correct.  Click on one of the Markers to make your guess"</string>
+    
+    
+    <string name="string_hint_second_guess_title">Second Guess</string>
+    <string name="string_hint_second_guess1">"You are able to place "</string>
+    <string name="string_hint_second_guess2">" marker which will give you the Distance to the Answer"</string>
+    <string name="string_hint_second_guess3">" markers which will give you the Distance to the Answer"</string> <!-- plural -->
+        
+    <string name="string_hint_missing_letters_title">Missing Letters</string>
+    <string name="string_hint_missing_letters1">"This Hint gives you the Name of the Location, but "</string>
+    <string name="string_hint_missing_letters2">" of the letters are missing"</string>    
+    
+    <string name="string_hint_opposite_side_title">Opposite side of the Earth</string>
+    <string name="string_hint_opposite_side">A Marker will be placed on the Map that is on the Exact Opposite Side of the Earth (Antipodal) to the Answer.  Imagine 
+        a line passing through the Centre of the Earth connecting the Marker and the Answer.</string>    
+    
+    
+</resources>

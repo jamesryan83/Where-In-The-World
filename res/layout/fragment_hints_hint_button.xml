@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/hints_button_layout_purchased"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_layout_blue_dark"
+        android:orientation="vertical" >
+
+        <com.dreamfire.whereintheworld.customviews.MyTextView
+            android:id="@+id/hints_button_textview_purchased"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/dimen_textsize_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hints_button_layout_unpurchased"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/color_layout_blue_light"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/hints_button_imageview_question_mark"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/string_common_contentdes_questionmark"
+            android:padding="8dp"
+            android:scaleType="centerInside" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_layout_blue" >
+
+            <View
+                android:id="@+id/hints_button_separator"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerVertical="true" />
+
+            <com.dreamfire.whereintheworld.customviews.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/hints_button_separator"
+                android:gravity="center"
+                android:text="@string/string_hintsitem_buy"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/dimen_textsize_18" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/hints_button_separator"
+                android:background="@color/color_layout_blue_dark"
+                android:orientation="horizontal" >
+
+                <com.dreamfire.whereintheworld.customviews.MyTextView
+                    android:id="@+id/hints_button_textview_hint_cost"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/dimen_textsize_18" />
+
+                <ImageView
+                    android:id="@+id/hints_button_imageview_token"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/string_common_contentdes_token"
+                    android:padding="3dp"
+                    android:scaleType="centerInside" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

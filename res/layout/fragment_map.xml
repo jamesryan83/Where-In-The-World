@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    
+    android:layout_height="match_parent" >
+
+    <!-- id not specified because it causes InflateException the second time the map is opened -->
+    <!-- <fragment
+        android:name="com.dreamfire.whereintheworld.fragments.FragmentMap"        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingId" /> -->
+    
+    
+    <fragment
+        android:name="com.google.android.gms.maps.SupportMapFragment"        
+        android:layout_width="match_parent"        
+        android:layout_height="match_parent"
+        tools:ignore="MissingId" />
+
+</FrameLayout>

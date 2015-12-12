@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_post_game_item_layout"
+    android:layout_width="120dp"
+    android:layout_height="60dp"
+    android:layout_gravity="center" >
+
+    <com.dreamfire.whereintheworld.customviews.MyTextView
+        android:id="@+id/dialog_post_game_item_textview_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_layout_blue_dark"
+        android:gravity="center"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/dimen_textsize_12" />
+
+    <com.dreamfire.whereintheworld.customviews.MyTextView
+        android:id="@+id/dialog_post_game_item_textview_value"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/dialog_post_game_item_textview_title"
+        android:background="@color/color_layout_blue_light_2"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/dimen_textsize_15" />
+
+</RelativeLayout>

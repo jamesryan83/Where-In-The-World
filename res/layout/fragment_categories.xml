@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/categories_layout_circlepageindicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_common_layout_top_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dimen_common_button_size_1"
+        android:layout_marginRight="@dimen/dimen_common_button_size_1" >
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/categories_circlepageindicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            app:fillColor="@color/color_yellow"
+            app:pageColor="@color/color_gray"
+            app:radius="@dimen/dimen_circlepageindicator_circle" />
+    </RelativeLayout>
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/categories_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/categories_layout_circlepageindicator"
+        android:layout_marginTop="@dimen/dimen_common_button_size_1"
+        android:layout_centerVertical="true"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" />
+
+    <ImageView
+        android:id="@+id/categories_imageview_next_arrow_left"
+        style="@style/style_viewpager_left_arrow"
+        android:clickable="true"
+        android:contentDescription="@string/string_common_contentdes_swipe_left_arrow"
+        android:focusable="true"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/categories_imageview_next_arrow_right"
+        style="@style/style_viewpager_right_arrow"
+        android:clickable="true"
+        android:contentDescription="@string/string_common_contentdes_swipe_right_arrow"
+        android:focusable="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>

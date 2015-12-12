@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageButton
+        android:id="@+id/fragment_hint_data_button_back"
+        style="@style/style_button_back"
+        android:contentDescription="@string/string_common_contentdes_back" />
+
+    <com.dreamfire.whereintheworld.customviews.MyTextView
+        android:id="@+id/fragment_hint_data_textview_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/color_gray"
+        android:textSize="@dimen/dimen_textsize_25" />
+
+    <com.dreamfire.whereintheworld.customviews.MyTextView
+        android:id="@+id/fragment_hint_data_textview_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_layout_blue_dark"
+        android:gravity="center"
+        android:lineSpacingExtra="5sp"
+        android:padding="10dp"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/dimen_textsize_15" />
+
+    <ImageView
+        android:id="@+id/fragment_hint_data_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/fragment_hint_data_textview_description"
+        android:layout_below="@id/fragment_hint_data_button_back"
+        android:layout_margin="15dp"
+        android:contentDescription="@string/string_hintdata_contentdes" />
+
+    <View
+        android:id="@+id/fragment_hint_data_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/fragment_hint_data_textview_description"
+        android:layout_below="@id/fragment_hint_data_button_back" />
+
+</RelativeLayout>

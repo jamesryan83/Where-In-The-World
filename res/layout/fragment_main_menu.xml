@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_mainmenu_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        tools:ignore="UselessParent" >
+
+        <!-- Title image and text -->
+
+        <LinearLayout
+            android:id="@+id/mainmenu_layout_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal" >
+
+            <com.dreamfire.whereintheworld.customviews.MyTextView
+                android:id="@+id/mainmenu_textview_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:text="@string/string_mainmenu_title"
+                android:textSize="@dimen/dimen_textsize_18" />
+
+            <ImageView
+                android:id="@+id/mainmenu_imageview_globe"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:contentDescription="@string/string_mainmenu_contentdes_globe" />
+        </LinearLayout>
+
+        <!-- Buttons -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mainmenu_layout_title"
+            android:layout_centerHorizontal="true" >
+
+            <com.dreamfire.whereintheworld.customviews.MyButton
+                android:id="@+id/mainmenu_button_game"
+                style="@style/style_fragment_mainmenu_button"
+                android:layout_centerHorizontal="true"
+                android:text="@string/string_mainmenu_buton_maingame" />
+
+            <!-- Lock screen overlay -->
+
+            <com.dreamfire.whereintheworld.customviews.MyButton
+                android:id="@+id/mainmenu_button_free_play"
+                style="@style/style_fragment_mainmenu_button"
+                android:layout_below="@id/mainmenu_button_game"
+                android:layout_centerHorizontal="true"
+                android:text="@string/string_mainmenu_buton_freeplay" />
+
+            <com.dreamfire.whereintheworld.customviews.MyButton
+                android:id="@+id/mainmenu_button_tutorial"
+                style="@style/style_fragment_mainmenu_button"
+                android:layout_below="@id/mainmenu_button_free_play"
+                android:layout_centerHorizontal="true"
+                android:text="@string/string_mainmenu_buton_tutorial" />
+
+            <RelativeLayout
+                android:id="@+id/mainmenu_layout_free_play_lock"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/mainmenu_button_tutorial"
+                android:layout_below="@id/mainmenu_button_game"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:background="@color/color_gray_transparent_dark" >
+
+                <ImageView
+                    android:id="@+id/mainmenu_imageview_lock"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:contentDescription="@string/string_common_contentdes_lock" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

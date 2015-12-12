@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<style>
+			div	{
+				-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+			}
+
+			html, body, #panoramaDiv {
+				height: 100%;
+				width: 100%;
+				margin: 0%;
+				padding: 0%
+			}
+		</style>
+
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+		<script>
+
+			var panorama;
+
+			function loadPanorama(latitude, longitude, heading, pitch){
+				var location = new google.maps.LatLng(latitude, longitude);
+
+				var panoramaOptions = {
+					position: location,
+					pov: {
+						heading: heading,
+						pitch: pitch
+					},
+					disableDefaultUI: true,
+					linksControl: true
+				};
+
+				panorama = new  google.maps.StreetViewPanorama(document.getElementById('panoramaDiv'),panoramaOptions);
+				panorama.setZoom(1);
+			}
+
+			function zoomInPanorama() {
+				var currentZoomLevel = panorama.getZoom();
+				if (currentZoomLevel <= 4){
+					panorama.setZoom(currentZoomLevel + 1);
+				}
+			}
+
+			function zoomOutPanorama() {
+				var currentZoomLevel = panorama.getZoom();
+				if (currentZoomLevel != 0) {
+					panorama.setZoom(currentZoomLevel - 1);
+				}
+			}
+
+			function panPanorama(value)	{
+				var currentPov = panorama.getPov();
+				currentPov.heading = parseInt(value);
+				panorama.setPov(currentPov);
+			}
+
+		</script>
+	</head>
+
+	<body>
+		<div id="panoramaDiv">
+	</body>
+</html>

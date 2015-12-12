@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Used in dialog_post_game -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/color_gray"
+          android:state_pressed="true"/>
+    <item android:drawable="@android:color/transparent"
+          android:state_enabled="true"/>
+    <item android:drawable="@android:color/transparent"
+          android:state_enabled="false"/>    
+</selector>

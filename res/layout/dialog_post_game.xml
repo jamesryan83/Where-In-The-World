@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_borderblack"
+    android:orientation="vertical" >
+
+    <com.dreamfire.whereintheworld.customviews.MyTextView
+        android:id="@+id/dialog_post_game_textView_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textSize="@dimen/dimen_textsize_18" />
+
+    <RelativeLayout
+        android:id="@+id/dialog_post_game_layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <com.dreamfire.whereintheworld.customviews.MyButton
+            android:id="@+id/dialog_post_game_button_view_map"
+            style="@style/style_common_dialog_button"
+            android:layout_width="130dp"
+            android:layout_alignParentLeft="true"
+            android:text="@string/string_dialogpostgame_view_map" />
+
+        <com.dreamfire.whereintheworld.customviews.MyButton
+            android:id="@+id/dialog_post_game_button_wiki"
+            style="@style/style_common_dialog_button"
+            android:layout_width="130dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/string_dialogpostgame_wiki" />
+
+        <com.dreamfire.whereintheworld.customviews.MyButton
+            android:id="@+id/dialog_post_game_button_locations"
+            style="@style/style_common_dialog_button"
+            android:layout_width="130dp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <com.dreamfire.whereintheworld.customviews.MyTextView
+        android:id="@+id/dialog_post_game_textView_final_score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/dialog_post_game_layout_bottom"
+        android:gravity="center"
+        android:textColor="@color/color_gray"
+        android:textSize="@dimen/dimen_textsize_18" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/dialog_post_game_textView_final_score"
+        android:layout_below="@id/dialog_post_game_textView_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <include
+                    android:id="@+id/dialog_post_game_item_distance"
+                    layout="@layout/dialog_post_game_item" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <include
+                    android:id="@+id/dialog_post_game_item_distance_score"
+                    layout="@layout/dialog_post_game_item" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <include
+                    android:id="@+id/dialog_post_game_item_distance_bonus"
+                    layout="@layout/dialog_post_game_item" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <include
+                    android:id="@+id/dialog_post_game_item_time_taken"
+                    layout="@layout/dialog_post_game_item" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <include
+                    android:id="@+id/dialog_post_game_item_time_bonus"
+                    layout="@layout/dialog_post_game_item" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dialog_post_game_layout_bonus_tokens"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <include
+                    android:id="@+id/dialog_post_game_item_bonus_tokens"
+                    layout="@layout/dialog_post_game_item" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

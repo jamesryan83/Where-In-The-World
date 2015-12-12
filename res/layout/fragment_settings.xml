@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:paddingTop="40dp" >
+
+    <RelativeLayout
+        android:id="@+id/settings_layout_checkboxes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center" >
+
+        <LinearLayout
+            android:id="@+id/settings_layout_checkbox_notifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/settings_checkbox_imagebutton_notifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/string_settings_contentdes_checkbox"
+                android:paddingStart="10dp" />
+
+            <com.dreamfire.whereintheworld.customviews.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/string_settings_notification_bar"
+                android:textColor="@color/color_gray"
+                android:textSize="@dimen/dimen_textsize_18" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/settings_layout_checkbox_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/settings_layout_checkbox_notifications"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/settings_checkbox_imagebutton_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/string_settings_contentdes_checkbox"
+                android:paddingStart="10dp" />
+
+            <com.dreamfire.whereintheworld.customviews.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/string_settings_music"
+                android:textColor="@color/color_gray"
+                android:textSize="@dimen/dimen_textsize_18" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/settings_layout_checkbox_light_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/settings_layout_checkbox_notifications"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/settings_checkbox_imagebutton_light_theme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/string_settings_contentdes_checkbox"
+                android:paddingStart="10dp" />
+
+            <com.dreamfire.whereintheworld.customviews.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/string_settings_light_theme"
+                android:textColor="@color/color_gray"
+                android:textSize="@dimen/dimen_textsize_18" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/settings_layout_checkbox_dark_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/settings_layout_checkbox_light_theme"
+            android:layout_below="@id/settings_layout_checkbox_notifications"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/settings_checkbox_imagebutton_dark_theme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/string_settings_contentdes_checkbox"
+                android:paddingStart="10dp" />
+
+            <com.dreamfire.whereintheworld.customviews.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/string_settings_dark_theme"
+                android:textColor="@color/color_gray"
+                android:textSize="@dimen/dimen_textsize_18" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/settings_layout_checkbox_kilometres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/settings_layout_checkbox_light_theme"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/settings_checkbox_imagebutton_kilometres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/string_settings_contentdes_checkbox"
+                android:paddingStart="10dp" />
+
+            <com.dreamfire.whereintheworld.customviews.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/string_settings_kilometres"
+                android:textColor="@color/color_gray"
+                android:textSize="@dimen/dimen_textsize_18" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/settings_layout_checkbox_miles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/settings_layout_checkbox_dark_theme"
+            android:layout_below="@id/settings_layout_checkbox_light_theme"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/settings_checkbox_imagebutton_miles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/string_settings_contentdes_checkbox"
+                android:paddingStart="10dp" />
+
+            <com.dreamfire.whereintheworld.customviews.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/string_settings_miles"
+                android:textColor="@color/color_gray"
+                android:textSize="@dimen/dimen_textsize_18" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/settings_layout_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settings_layout_checkboxes"
+        android:layout_centerHorizontal="true" >
+
+        <com.dreamfire.whereintheworld.customviews.MyButton
+            android:id="@+id/settings_button_reset_database"
+            style="@style/style_settings_button"
+            android:text="@string/string_settings_reset_database"
+            android:textSize="@dimen/dimen_textsize_18" />
+
+        <com.dreamfire.whereintheworld.customviews.MyButton
+            android:id="@+id/settings_button_credits"
+            style="@style/style_settings_button"
+            android:layout_toRightOf="@id/settings_button_reset_database"
+            android:text="@string/string_settings_credits"
+            android:textSize="@dimen/dimen_textsize_18" />
+
+        <com.dreamfire.whereintheworld.customviews.MyButton
+            android:id="@+id/settings_button_references"
+            style="@style/style_settings_button"
+            android:layout_below="@id/settings_button_reset_database"
+            android:text="@string/string_settings_references"
+            android:textSize="@dimen/dimen_textsize_18" />
+
+        <com.dreamfire.whereintheworld.customviews.MyButton
+            android:id="@+id/settings_button_legal_notices"
+            style="@style/style_settings_button"
+            android:layout_below="@id/settings_button_reset_database"
+            android:layout_toRightOf="@id/settings_button_references"
+            android:text="@string/string_settings_legal"
+            android:textSize="@dimen/dimen_textsize_18" />
+    </RelativeLayout>
+
+</RelativeLayout>

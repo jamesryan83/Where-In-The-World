@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/difficulty_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:orientation="vertical"
+    android:paddingBottom="40dp"
+    android:paddingTop="40dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+        android:clipChildren="false"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/difficulty_layout_easy"
+            style="@style/style_activitydifficulty_button_layout" >
+
+            <com.dreamfire.whereintheworld.customviews.MyTextView
+                android:id="@+id/difficulty_textview_completed_easy"
+                style="@style/style_activitydifficulty_button_text_bottom" />
+
+            <com.dreamfire.whereintheworld.customviews.MyTextView
+                style="@style/style_activitydifficulty_button_text_top"
+                android:layout_above="@id/difficulty_textview_completed_easy"
+                android:text="@string/string_difficulty_easy" />
+
+            <com.dreamfire.whereintheworld.customviews.MyButton
+                android:id="@+id/difficulty_button_easy"
+                style="@style/style_common_button_invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/difficulty_layout_normal"
+            style="@style/style_activitydifficulty_button_layout" >
+
+            <com.dreamfire.whereintheworld.customviews.MyTextView
+                android:id="@+id/difficulty_textview_completed_normal"
+                style="@style/style_activitydifficulty_button_text_bottom" />
+
+            <com.dreamfire.whereintheworld.customviews.MyTextView
+                style="@style/style_activitydifficulty_button_text_top"
+                android:layout_above="@id/difficulty_textview_completed_normal"
+                android:text="@string/string_difficulty_normal" />
+
+            <com.dreamfire.whereintheworld.customviews.MyButton
+                android:id="@+id/difficulty_button_normal"
+                style="@style/style_common_button_invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_weight="1"
+        android:clipChildren="false"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/difficulty_layout_hard"
+            style="@style/style_activitydifficulty_button_layout" >
+
+            <com.dreamfire.whereintheworld.customviews.MyTextView
+                android:id="@+id/difficulty_textview_completed_hard"
+                style="@style/style_activitydifficulty_button_text_bottom" />
+
+            <com.dreamfire.whereintheworld.customviews.MyTextView
+                style="@style/style_activitydifficulty_button_text_top"
+                android:layout_above="@id/difficulty_textview_completed_hard"
+                android:text="@string/string_difficulty_hard" />
+
+            <com.dreamfire.whereintheworld.customviews.MyButton
+                android:id="@+id/difficulty_button_hard"
+                style="@style/style_common_button_invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/difficulty_layout_expert"
+            style="@style/style_activitydifficulty_button_layout" >
+
+            <com.dreamfire.whereintheworld.customviews.MyTextView
+                android:id="@+id/difficulty_textview_completed_expert"
+                style="@style/style_activitydifficulty_button_text_bottom" />
+
+            <com.dreamfire.whereintheworld.customviews.MyTextView
+                style="@style/style_activitydifficulty_button_text_top"
+                android:layout_above="@id/difficulty_textview_completed_expert"
+                android:text="@string/string_difficulty_expert" />
+
+            <com.dreamfire.whereintheworld.customviews.MyButton
+                android:id="@+id/difficulty_button_expert"
+                style="@style/style_common_button_invisible" />
+
+            <!-- Lock screen overlay -->
+
+            <RelativeLayout
+                android:id="@+id/difficulty_layout_expert_lock"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_gray_transparent_dark" >
+
+                <ImageView
+                    android:id="@+id/difficulty_image_lock"
+                    android:layout_width="@dimen/dimen_common_lock_size"
+                    android:layout_height="@dimen/dimen_common_lock_size"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:contentDescription="@string/string_common_contentdes_lock"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

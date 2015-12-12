@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="450dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@color/color_gray_dark"
+    android:clickable="true"
+    android:focusable="false" >
+
+    <!-- Left section -->
+
+    <LinearLayout
+        android:id="@+id/nav_drawer_layout_navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <com.dreamfire.whereintheworld.customviews.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:text="@string/string_navdrawer_title"
+            android:textColor="@color/color_gray"
+            android:textSize="@dimen/dimen_textsize_25" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_gray_transparent" />
+
+        <com.dreamfire.whereintheworld.customviews.MyButton
+            android:id="@+id/nav_drawer_button_buy_tokens"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_color_nav_drawer"
+            android:padding="5dp"
+            android:text="@string/string_navdrawer_buy_tokens"
+            android:textColor="@color/color_gray" />
+
+        <View
+            android:id="@+id/nav_drawer_separator_under_tokens"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_gray_transparent" />
+
+        <com.dreamfire.whereintheworld.customviews.MyButton
+            android:id="@+id/nav_drawer_button_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_color_nav_drawer"
+            android:padding="5dp"
+            android:text="@string/string_navdrawer_settings"
+            android:textColor="@color/color_gray" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_gray_transparent" />
+
+        <com.dreamfire.whereintheworld.customviews.MyButton
+            android:id="@+id/nav_drawer_button_goto_mainmenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_color_nav_drawer"
+            android:padding="5dp"
+            android:text="@string/string_navdrawer_main_menu"
+            android:textColor="@color/color_gray" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_gray_transparent" />
+
+        <com.dreamfire.whereintheworld.customviews.MyButton
+            android:id="@+id/nav_drawer_button_goto_difficulties"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_color_nav_drawer"
+            android:padding="5dp"
+            android:text="@string/string_navdrawer_difficulty"
+            android:textColor="@color/color_gray" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_gray_transparent" />
+
+        <com.dreamfire.whereintheworld.customviews.MyButton
+            android:id="@+id/nav_drawer_button_goto_categories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_color_nav_drawer"
+            android:padding="5dp"
+            android:text="@string/string_navdrawer_category"
+            android:textColor="@color/color_gray" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_gray_transparent" />
+
+        <com.dreamfire.whereintheworld.customviews.MyButton
+            android:id="@+id/nav_drawer_button_goto_levels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_color_nav_drawer"
+            android:padding="5dp"
+            android:text="@string/string_navdrawer_level"
+            android:textColor="@color/color_gray" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_gray_transparent" />
+
+        <com.dreamfire.whereintheworld.customviews.MyButton
+            android:id="@+id/nav_drawer_button_goto_locations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_color_nav_drawer"
+            android:padding="5dp"
+            android:text="@string/string_navdrawer_location"
+            android:textColor="@color/color_gray" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_gray_transparent" />
+        
+        <com.dreamfire.whereintheworld.customviews.MyButton
+            android:id="@+id/nav_drawer_button_exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_color_nav_drawer"
+            android:padding="5dp"
+            android:text="@string/string_navdrawer_exit"
+            android:textColor="@color/color_gray" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_gray_transparent" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/nav_drawer_view_vertical_separator"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="5dp"
+        android:layout_toRightOf="@id/nav_drawer_layout_navigation"
+        android:background="@color/color_gray_transparent" />
+
+    <!-- Right Section -->
+
+    <LinearLayout
+        android:id="@+id/nav_drawer_layout_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/nav_drawer_view_vertical_separator"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/nav_drawer_layout_state_inner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="UselessParent" >
+
+            <LinearLayout
+                android:id="@+id/nav_drawer_layout_music"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <com.dreamfire.whereintheworld.customviews.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"                    
+                    android:text="@string/string_navdrawer_music"
+                    android:textColor="@color/color_gray"
+                    android:textSize="@dimen/dimen_textsize_25" />
+
+                <ImageButton
+                    android:id="@+id/nav_drawer_button_music_previous"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_color_blue_light"
+                    android:contentDescription="@string/string_navdrawer_music_next_contentdes"
+                    android:padding="4dp"
+                    android:scaleType="centerInside" />
+                
+                <ImageButton
+                    android:id="@+id/nav_drawer_button_music_next"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"   
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/button_color_blue_light"
+                    android:contentDescription="@string/string_navdrawer_music_previous_contentdes"
+                    android:padding="4dp"
+                    android:scaleType="centerInside" />
+            </LinearLayout>
+
+            <com.dreamfire.whereintheworld.customviews.MyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/string_navdrawer_game_data"
+                android:textColor="@color/color_gray"
+                android:textSize="@dimen/dimen_textsize_25" />
+
+            <com.dreamfire.whereintheworld.customviews.MyTextView
+                android:id="@+id/nav_drawer_textview_difficulty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/color_gray"
+                android:textSize="15sp" />
+
+            <com.dreamfire.whereintheworld.customviews.MyTextView
+                android:id="@+id/nav_drawer_textview_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/color_gray"
+                android:textSize="15sp" />
+
+            <com.dreamfire.whereintheworld.customviews.MyTextView
+                android:id="@+id/nav_drawer_textview_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/color_gray"
+                android:textSize="15sp" />
+
+            <com.dreamfire.whereintheworld.customviews.MyTextView
+                android:id="@+id/nav_drawer_textview_tokens"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/color_gray"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/nav_drawer_button_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/button_color_blue_light"
+        android:contentDescription="@string/string_common_contentdes_back"
+        android:padding="4dp"
+        android:scaleType="centerInside" />
+
+</RelativeLayout>

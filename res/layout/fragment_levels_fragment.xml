@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+
+    <!-- Bottom layout -->
+
+    <RelativeLayout
+        android:id="@+id/level_fragment_layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@color/color_layout_blue_dark"
+        android:clickable="false" >
+
+        <com.dreamfire.whereintheworld.customviews.MyTextView
+            android:id="@+id/level_fragment_textview_difficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="false"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/dimen_textsize_25" />
+
+        <ImageView
+            android:id="@+id/level_fragment_imageview_lock"
+            android:layout_width="@dimen/dimen_common_lock_size"
+            android:layout_height="@dimen/dimen_common_lock_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:clickable="false"
+            android:contentDescription="@string/string_common_contentdes_lock" />
+    </RelativeLayout>
+
+    <!-- Top layout -->
+
+    <RelativeLayout
+        android:id="@+id/level_fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/level_fragment_layout_bottom"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_layout_blue_light_2"
+        android:clickable="false" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="false"
+            android:orientation="vertical"
+            tools:ignore="UselessParent" >
+
+            <com.dreamfire.whereintheworld.customviews.MyTextView
+                android:id="@+id/level_fragment_textview_level_complete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:clickable="false"                
+                android:visibility="invisible"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/dimen_textsize_20" />
+            
+            <com.dreamfire.whereintheworld.customviews.MyTextView
+                android:id="@+id/level_fragment_textview_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:clickable="false"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/dimen_textsize_70" />
+
+            <com.dreamfire.whereintheworld.customviews.MyTextView
+                android:id="@+id/level_fragment_textview_best_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:clickable="false"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/dimen_textsize_20" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

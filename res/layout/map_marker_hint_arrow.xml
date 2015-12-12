@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/map_marker_layout_hint_arrow"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/map_marker_hint_arrow_imageview"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/string_mapmarker_hintarrow_contentdes"
+        android:src="@drawable/image_map_hint_arrow" />
+
+</LinearLayout>

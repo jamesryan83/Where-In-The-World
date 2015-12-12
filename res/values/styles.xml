@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Base Theme -->
+    <style name="MyAppTheme" parent="android:Theme.Black.NoTitleBar.Fullscreen">
+        <item name="android:soundEffectsEnabled">false</item>        
+    </style>
+    
+    
+    
+    <!-- ActivityMainMenu -->
+    <style name="style_fragment_mainmenu_button">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/button_color_blue</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textColor">@color/color_white</item>
+    </style>
+
+    <!-- ActivityDifficulty -->
+    <style name="style_activitydifficulty_button_layout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="style_activitydifficulty_button_text_bottom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@color/color_layout_blue_dark</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">@dimen/dimen_textsize_15</item>
+    </style>
+
+    <style name="style_activitydifficulty_button_text_top">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/color_layout_blue_light_2</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">@dimen/dimen_textsize_25</item>
+    </style>
+
+    <!-- ActivityLocations -->
+    <style name="style_activitylocations_button_location">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/button_color_transparent</item>
+    </style>
+
+    <!-- ActivityMainGame -->
+    <style name="style_activitymaingame_button_accept_cancel_score">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/button_color_green</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">@dimen/dimen_textsize_20</item>
+    </style>
+    
+    <!--  FragmentSettings -->
+    <style name="style_settings_button">
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:background">@drawable/button_color_blue</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">@dimen/dimen_textsize_20</item>
+    </style>
+
+    <!-- ===================================  Common Stuff =================================== -->
+
+
+    <!-- Dialog Text and Button -->
+    <style name="style_common_dialog_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/color_gray</item>
+    </style>
+
+    <style name="style_common_dialog_button">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:background">@drawable/button_color_blue</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">@dimen/dimen_textsize_20</item>
+    </style>
+
+    <style name="style_common_button">
+        <item name="android:layout_width">@dimen/dimen_common_button_size_1</item>
+        <item name="android:layout_height">@dimen/dimen_common_button_size_1</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:background">@drawable/button_color_blue_light</item>
+        <item name="android:scaleType">centerInside</item>        
+    </style>
+    
+    <!-- Invisible button -->
+    <style name="style_common_button_invisible">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/button_color_transparent</item>
+    </style>
+
+    <!-- Activity Title -->
+    <style name="style_textview_activity_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:textSize">@dimen/dimen_textsize_25</item>
+    </style>
+
+    <!-- Scrollbar -->
+    <style name="style_scrollbar">
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+        <item name="android:fadeScrollbars">false</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:scrollbarThumbHorizontal">@drawable/image_common_scrollbar_patch</item>
+        <item name="android:scrollbarThumbVertical">@drawable/image_common_scrollbar_patch</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+    </style>
+
+    <!-- Settings, Nav Drawer and Back buttons -->
+    <style name="style_button_settings">
+        <item name="android:layout_width">@dimen/dimen_common_button_size_1</item>
+        <item name="android:layout_height">@dimen/dimen_common_button_size_1</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:background">@drawable/button_color_blue_light</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:src">@drawable/image_common_settings</item>
+    </style>
+
+    <style name="style_button_navdrawer">
+        <item name="android:layout_width">@dimen/dimen_common_button_size_1</item>
+        <item name="android:layout_height">@dimen/dimen_common_button_size_1</item>
+        <item name="android:padding">7dp</item>
+        <item name="android:background">@drawable/button_color_blue_light</item>
+        <item name="android:scaleType">centerInside</item>        
+    </style>
+
+    <style name="style_button_back">
+        <item name="android:layout_width">@dimen/dimen_common_button_size_1</item>
+        <item name="android:layout_height">@dimen/dimen_common_button_size_1</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:background">@drawable/button_color_blue_light</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <!-- Token image, text and layout -->
+    <style name="style_image_token">
+        <item name="android:layout_width">@dimen/dimen_common_button_size_token</item>
+        <item name="android:layout_height">@dimen/dimen_common_button_size_token</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:clickable">false</item>
+    </style>
+
+    <style name="style_textview_token">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:clickable">false</item>
+        <item name="android:text">@string/string_common_token_text_default</item>
+        <item name="android:textSize">@dimen/dimen_textsize_15</item>
+    </style>
+
+    <style name="style_layout_token">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:paddingTop">7dp</item>
+        <item name="android:paddingRight">7dp</item>
+        <item name="android:paddingBottom">7dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- Viewpager Left and Right arrows -->
+    <style name="style_viewpager_left_arrow">
+        <item name="android:layout_width">@dimen/dimen_common_arrow_size</item>
+        <item name="android:layout_height">@dimen/dimen_common_arrow_size</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+
+    <style name="style_viewpager_right_arrow">
+        <item name="android:layout_width">@dimen/dimen_common_arrow_size</item>
+        <item name="android:layout_height">@dimen/dimen_common_arrow_size</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+
+    <!-- CirclePageIndicator -->
+    <style name="style_circle_page_indicator">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+</resources>

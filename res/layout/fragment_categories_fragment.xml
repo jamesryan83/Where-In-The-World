@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp" >
+
+    <!-- Category Image -->
+
+    <ImageView
+        android:id="@+id/categories_fragment_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/string_categories_contentdes_category_image"
+        android:scaleType="centerCrop" />
+
+    <!-- Lock screen -->
+
+    <RelativeLayout
+        android:id="@+id/categories_fragment_layout_lock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_gray_transparent_dark" >
+
+        <com.dreamfire.whereintheworld.customviews.MyTextView
+            android:id="@+id/categories_fragment_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/dimen_textsize_18" />
+
+        <ImageView
+            android:id="@+id/categories_fragment_image_lock"
+            android:layout_width="@dimen/dimen_common_lock_size"
+            android:layout_height="@dimen/dimen_common_lock_size"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:contentDescription="@string/string_common_contentdes_lock" />
+    </RelativeLayout>
+    
+    <ImageView
+            android:id="@+id/categories_fragment_image_tick"
+            android:layout_width="@dimen/dimen_common_lock_size"
+            android:layout_height="@dimen/dimen_common_lock_size"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"            
+            android:contentDescription="@string/string_common_contentdes_tick" />
+
+</RelativeLayout>

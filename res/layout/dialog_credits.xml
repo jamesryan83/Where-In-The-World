@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_borderblack"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/dialog_credits_imageview_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:padding="5dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/string_splash_contentdes_logo" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/dialog_credits_imageview_logo"
+        android:orientation="vertical" >
+
+        <com.dreamfire.whereintheworld.customviews.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:layout_gravity="center_horizontal"            
+            android:maxLines="10"
+            android:paddingTop="5dp"
+            android:text="@string/string_settings_credits_title"
+            android:textColor="@color/color_gray_2"
+            android:textSize="@dimen/dimen_textsize_25" />
+        
+        <com.dreamfire.whereintheworld.customviews.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:maxLines="10"
+            android:padding="5dp"
+            android:text="@string/string_settings_credits_content"
+            android:textColor="@color/color_gray_2"
+            android:textSize="@dimen/dimen_textsize_18" />
+
+        <com.dreamfire.whereintheworld.customviews.MyButton
+            android:id="@+id/dialog_credits_button_ok"
+            style="@style/style_common_dialog_button"
+            android:layout_gravity="center_horizontal" 
+            android:text="@string/string_common_ok" />
+    </LinearLayout>
+
+</RelativeLayout>

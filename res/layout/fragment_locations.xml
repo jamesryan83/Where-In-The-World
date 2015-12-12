@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/locations_button_location_reset"
+        style="@style/style_common_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/string_locations_contentdes_reset" />
+
+    <!-- Points -->
+
+    <RelativeLayout
+        android:id="@+id/locations_layout_points"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_common_layout_top_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp" >
+
+        <RelativeLayout
+            android:id="@+id/locations_layout_current_points"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/color_yellow" >
+
+            <com.dreamfire.whereintheworld.customviews.MyTextView
+                android:id="@+id/locations_textview_current_points_static"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/string_locations_current_points"
+                android:textColor="@color/color_red"
+                android:textSize="@dimen/dimen_textsize_15" />
+
+            <com.dreamfire.whereintheworld.customviews.MyTextView
+                android:id="@+id/locations_textview_current_points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="5dp"
+                android:textColor="@color/color_gray_2"
+                android:textSize="@dimen/dimen_textsize_15" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/locations_layout_required_points"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/color_yellow"
+            android:visibility="invisible" >
+
+            <com.dreamfire.whereintheworld.customviews.MyTextView
+                android:id="@+id/locations_textview_required_points_static"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="@string/string_locations_required_points"
+                android:textColor="@color/color_red"
+                android:textSize="@dimen/dimen_textsize_15" />
+
+            <com.dreamfire.whereintheworld.customviews.MyTextView
+                android:id="@+id/locations_textview_required_points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="5dp"
+                android:textColor="@color/color_gray_2"
+                android:textSize="@dimen/dimen_textsize_15" />
+        </RelativeLayout>
+
+        <!-- This textView replaces the relative layout above when the level is complete -->
+
+        <com.dreamfire.whereintheworld.customviews.MyTextView
+            android:id="@+id/locations_textview_level_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="15dp"            
+            android:textColor="@color/color_gray_2"
+            android:textSize="@dimen/dimen_textsize_20"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <!-- Location Buttons -->
+
+    <TableLayout
+        android:id="@+id/locations_layout_location_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/locations_layout_points"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:shrinkColumns="*"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:id="@+id/locations_layout_button_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1" >
+
+                <include
+                    android:id="@+id/locations_button_layout_1"
+                    layout="@layout/fragment_locations_button" />
+
+                <com.dreamfire.whereintheworld.customviews.MyButton
+                    android:id="@+id/locations_button_location_1"
+                    style="@style/style_activitylocations_button_location" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/locations_layout_button_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1" >
+
+                <include
+                    android:id="@+id/locations_button_layout_2"
+                    layout="@layout/fragment_locations_button" />
+
+                <com.dreamfire.whereintheworld.customviews.MyButton
+                    android:id="@+id/locations_button_location_2"
+                    style="@style/style_activitylocations_button_location" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/locations_layout_button_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1" >
+
+                <include
+                    android:id="@+id/locations_button_layout_3"
+                    layout="@layout/fragment_locations_button" />
+
+                <com.dreamfire.whereintheworld.customviews.MyButton
+                    android:id="@+id/locations_button_location_3"
+                    style="@style/style_activitylocations_button_location" />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:id="@+id/locations_layout_button_4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1" >
+
+                <include
+                    android:id="@+id/locations_button_layout_4"
+                    layout="@layout/fragment_locations_button" />
+
+                <com.dreamfire.whereintheworld.customviews.MyButton
+                    android:id="@+id/locations_button_location_4"
+                    style="@style/style_activitylocations_button_location" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/locations_layout_button_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1" >
+
+                <include
+                    android:id="@+id/locations_button_layout_5"
+                    layout="@layout/fragment_locations_button" />
+
+                <com.dreamfire.whereintheworld.customviews.MyButton
+                    android:id="@+id/locations_button_location_5"
+                    style="@style/style_activitylocations_button_location" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/locations_layout_button_6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1" >
+
+                <include
+                    android:id="@+id/locations_button_layout_6"
+                    layout="@layout/fragment_locations_button" />
+
+                <com.dreamfire.whereintheworld.customviews.MyButton
+                    android:id="@+id/locations_button_location_6"
+                    style="@style/style_activitylocations_button_location" />
+            </RelativeLayout>
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

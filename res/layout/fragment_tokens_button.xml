@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_layout_blue_dark" >
+
+    <com.dreamfire.whereintheworld.customviews.MyTextView
+        android:id="@+id/tokens_button_textview_tokens"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/dimen_textsize_15" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tokens_button_textview_tokens"
+        android:background="@color/color_layout_blue"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:background="@color/color_layout_blue_light"
+            android:orientation="vertical" >
+
+            <com.dreamfire.whereintheworld.customviews.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/string_tokens_buy"
+                android:gravity="center"
+                android:padding="0dp"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/dimen_textsize_20"
+                tools:ignore="NestedWeights" />
+
+            <com.dreamfire.whereintheworld.customviews.MyTextView
+                android:id="@+id/tokens_button_textview_tokens_price"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="0dp"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/dimen_textsize_15" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/tokens_button_imageview_token"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:padding="2dp"
+            android:layout_weight="0.9"
+            android:contentDescription="@string/string_common_contentdes_token"
+            android:scaleType="centerInside" />
+    </LinearLayout>
+
+</RelativeLayout>

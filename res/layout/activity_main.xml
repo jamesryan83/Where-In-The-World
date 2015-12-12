@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="Overdraw" >
+
+    <ImageButton
+        android:id="@+id/activity_main_button_nav_drawer"
+        style="@style/style_button_navdrawer"
+        android:contentDescription="@string/string_common_contentdes_nav_drawer" />
+
+    <ImageButton
+        android:id="@+id/activity_main_button_back"
+        style="@style/style_button_back"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/string_common_contentdes_back" />
+
+    <FrameLayout
+        android:id="@+id/activity_main_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent" >
+    </FrameLayout>    
+
+    <!-- Top Layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_common_layout_top_bottom"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp" >
+
+        <LinearLayout
+            android:id="@+id/activity_main_layout_token"
+            style="@style/style_layout_token"
+            android:layout_marginRight="20dp"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:id="@+id/activity_main_imageview_token"
+                style="@style/style_image_token"
+                android:contentDescription="@string/string_common_contentdes_token" />
+
+            <com.dreamfire.whereintheworld.customviews.MyTextView
+                android:id="@+id/activity_main_textview_tokens"                
+                style="@style/style_textview_token" />
+        </LinearLayout>
+
+        <com.dreamfire.whereintheworld.customviews.MyTextView
+            android:id="@+id/activity_main_textview_title"
+            style="@style/style_textview_activity_title" />
+    </RelativeLayout>
+    
+    <FrameLayout
+        android:id="@+id/activity_main_framelayout_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" >
+    </FrameLayout>
+
+</RelativeLayout>
