@@ -3,7 +3,7 @@ Android phone Google Maps based guessing game with interactive hint system.
 
 ![Where in the World Image](res/image.png)
 
-This is the full source code for the game Where in the World.  It uses an sqlite database, token based payment system and progressive gameplay mechanics.  It is similar to [Geoguesser](https://geoguessr.com/), but has an interactive hint system developed for touch screens and includes unlockable categories and levels with randomly selected locations.  It was developed by Jason Christie (artist) and myself over a 9 month period in 2014.  
+This is the full source code for the game Where in the World.  It uses an sqlite database, token based payment system and progressive gameplay mechanics.  It is similar to [Geoguessr](https://geoguessr.com/), but has an interactive hint system developed for touch screens and includes unlockable categories and levels with randomly selected locations.  It was developed by Jason Christie (artist) and myself over a 9 month period in 2014.  
 
 Libraries used were [Glide](https://github.com/bumptech/glide), [Gson](https://github.com/google/gson), [Guava](https://github.com/google/guava) and [sqlite-asset-helper](https://github.com/jgilfelt/android-sqlite-asset-helper)
 
